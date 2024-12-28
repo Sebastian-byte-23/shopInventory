@@ -1,0 +1,100 @@
+/* Estilo general del body */
+body {
+  font-family: Arial, sans-serif; /* Fuente utilizada */
+  background-image: url('img3.jpg'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Cubrir toda la pantalla */
+  background-position: center; /* Centrar la imagen */
+  margin: 0; /* Sin márgenes */
+  padding: 0; /* Sin relleno */
+  display: flex; /* Flexbox para centrar el contenido */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: 100vh; /* Altura completa de la ventana */
+  color: #fff; /* Color del texto para mejor contraste */
+}
+
+/* Estilo del contenedor del formulario */
+.form-login {
+  background-color: white; /* Fondo blanco */
+  padding: 30px; /* Relleno interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  width: 300px; /* Ancho fijo */
+  transition: transform 0.2s; /* Transición suave al cambiar el tamaño */
+}
+
+/* Efecto al pasar el mouse sobre el formulario */
+.form-login:hover {
+  transform: scale(1.02); /* Aumentar ligeramente el tamaño */
+}
+
+/* Títulos del formulario */
+.form-login h4 {
+  text-align: center; /* Centrar el texto */
+  color: #333; /* Color del texto */
+  margin-bottom: 20px; /* Espacio debajo del título */
+  font-size: 24px; /* Tamaño de fuente del título */
+  font-weight: bold; /* Negrita */
+}
+
+/* Mensajes de error */
+.form-login p {
+  color: rgb(0, 0, 0); /* Color rojo para los mensajes de error */
+  text-align: center; /* Centrar el texto del error */
+  font-weight: bold; /* Negrita */
+}
+
+/* Estilo de las etiquetas */
+label {
+  display: block; /* Cada etiqueta en una línea */
+  margin-bottom: 5px; /* Espacio debajo de las etiquetas */
+  color: #555; /* Color de las etiquetas */
+}
+
+/* Estilo de los campos de entrada */
+.controls {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Relleno interno */
+  margin-bottom: 15px; /* Espacio debajo de los campos */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px; /* Bordes redondeados */
+  box-sizing: border-box; /* Incluir el padding y border en el ancho */
+  font-size: 16px; /* Tamaño de fuente de los campos */
+  transition: border-color 0.3s; /* Transición suave del borde */
+}
+
+/* Efecto en los campos de entrada al tener foco */
+.controls:focus {
+  border-color: #007bff; /* Cambiar el color del borde al azul */
+  outline: none; /* Sin contorno por defecto */
+}
+
+/* Estilo del botón de envío */
+.buttons {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Relleno interno */
+  background-color: #007bff; /* Color de fondo azul */
+  color: white; /* Color del texto en blanco */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  font-size: 16px; /* Tamaño de la fuente */
+  transition: background-color 0.3s, transform 0.2s; /* Transición suave del color y tamaño */
+}
+
+/* Efecto hover en el botón */
+.buttons:hover {
+  background-color: #0056b3; /* Color azul más oscuro al pasar el mouse */
+  transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+}
+
+/* Efecto activo en el botón */
+.buttons:active {
+  transform: scale(0.95); /* Reducir el tamaño al hacer clic */
+}
+.error-message {
+  color: red; /* Color rojo para el mensaje de error */
+  font-size: 14px; /* Tamaño de fuente */
+  margin-top: 10px; /* Espacio superior */
+  text-align: center; /* Centrar el texto */
+}

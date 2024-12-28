@@ -1,0 +1,276 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial';
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    overflow-x: hidden; /* Prevents horizontal overflow */
+}
+
+/* Container Styling */
+.container {
+    max-width: 50%; /* Wider container */
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Allows vertical scrolling */
+    max-height: 80vh; /* Limits height to 80% of viewport */
+}
+
+/* Headers Styling */
+h1, h2 {
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Categorías List Styling */
+.categoria-lista {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto; /* Scrollable list */
+}
+
+.categoria-item {
+    padding: 15px 25px;
+    background-color: #e9ecf0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.subcategorias {
+    display: none;  /* Subcategorías ocultas por defecto */
+    padding-left: 30px;
+    margin-top: 8px;
+}
+
+/* Toggle Button Styling */
+.toggle-btn {
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 50px;
+    color: #000000;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Form Styling */
+.formulario {
+    background-color: #fafafa;
+    border: 1px solid #e0e0e0;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.formulario:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.formulario input[type="text"],
+.formulario select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.formulario input[type="text"]:focus,
+.formulario select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.formulario button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.formulario button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn-eli[type= 'submit']{
+    background-color: #f44336;
+    padding: 10px 7px;
+    align-items: center;
+}
+.btn-eli:hover[type= 'submit']{
+    background-color: #c82333;
+}
+/* Table Styling */
+.tabla {
+    margin-top: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabla table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.tabla th, .tabla td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tabla th {
+    background-color: #f8f8f8;
+    font-weight: 600;
+    color: #555;
+}
+
+.tabla tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Table Delete Button Styling */
+.tabla input[type="submit"].delete-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.tabla input[type="submit"].delete-button:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+/* Back Button Styling */
+.back-button {
+    display: block;
+    width: 220px;
+    margin: 25px auto;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background-color: #218838;
+}
+
+/* Add/Update Buttons */
+.btnAdd, .btnUpdate {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnAdd:hover, .btnUpdate:hover {
+    background-color: #1e7d34;
+}
+
+.btnAdd:focus, .btnUpdate:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+.btnUpdate {
+    background-color: #28a745;
+}
+
+.btnUpdate:hover {
+    background-color: #208537;
+}
+
+
+.btn-eli{
+    background-color: #c82333;
+}
+
+/* Estilos para los iconos dentro de los botones */
+button i, form button i {
+    font-size: 20px;
+    color: white;  /* Los iconos serán blancos */
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+    transition: color 0.3s ease;
+}
+
+.button-inventario{
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button-inventario:hover{
+    background-color: #127b8b;
+}
+/* Tooltip (mensaje emergente) cuando se pasa el ratón sobre los iconos */
+button[title]:hover::after, form button[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: -25px;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+}

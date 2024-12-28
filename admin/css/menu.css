@@ -1,0 +1,255 @@
+/* Estilos personalizados para el Sistema de Gestión de Inventario */
+
+/* Establecer la barra de desplazamiento en todo el cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #969191;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    /* Agrega barra de desplazamiento vertical */
+    max-height: 600px;
+    /* Limita el cuerpo a la altura de la ventana */
+}
+
+/* Agregar desplazamiento para secciones específicas si es necesario */
+#features,
+#quick-links,
+#create-account {
+    max-height: 75vh;
+    /* Ajusta según sea necesario */
+    overflow-y: auto;
+    /* Barra de desplazamiento vertical solo cuando sea necesario */
+    padding-right: 15px;
+    /* Evita que el contenido se superponga con la barra de desplazamiento */
+}
+
+
+h1,
+h2 {
+    color: #000000;
+}
+
+/* Header */
+header {
+    background-color: #6c757d;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Sección de características */
+#features {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#features h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+#features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#features ul li {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border-left: 4px solid #007bff;
+}
+
+/* Accesos rápidos */
+#quick-links {
+    text-align: center;
+    margin: 40px auto;
+}
+
+#quick-links .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#quick-links .button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    #quick-links .button {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+#create-account {
+    text-align: center;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #e9ecef, #ffffff);
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre el contenedor */
+#create-account:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+#create-account h2 {
+    color: #007bff;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#create-account .create-account-button {
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+#create-account .create-account-button:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Agrega un ligero efecto de pulsación */
+#create-account .create-account-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilo para el enlace de cerrar sesión */
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    /* Alinea todos los elementos de la navegación al final */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li.logout a {
+    background-color: red;
+    padding: 8px 16px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li.logout a:hover {
+    background-color: darkred;
+}
+
+
+/* Estilos del snackbar */
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 10px;
+    /* Mover el snackbar hacia la izquierda */
+    bottom: 30px;
+    /* Mantener la posición inferior */
+    font-size: 20px;
+}
+
+/* Mostrar el snackbar cuando se añada la clase 'show' */
+#snackbar.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animación de aparición */
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+/* Animación de desaparición */
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}

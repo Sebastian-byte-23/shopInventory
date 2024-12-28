@@ -1,0 +1,215 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón Agregar */
+.btn-agregar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background-color 0.3s ease;
+}
+
+.btn-agregar:hover {
+    background-color: #45a049;
+}
+
+/* Tabla de locales */
+.tabla-locales {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-locales th,
+.tabla-locales td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabla-locales th {
+    background-color: #007bff;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+.edit-btn {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.edit-btn:hover{
+    background-color: #0a55a5;
+}
+
+.delete-btn{
+    padding: 5px 10px;
+    background-color: #f63131;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover{
+    background-color: #b32323;
+}
+.edit-btn:hover {
+    background-color: #0b7dda;
+}
+
+
+
+/* Estilos para los modales */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-contenido {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 40%;
+    max-width: 400px;
+}
+
+.modal-contenido h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal-contenido input,
+.modal-contenido select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-contenido button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-contenido button:hover {
+    background-color: #45a049;
+}
+
+.modal .close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Botón de cerrar */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos generales de los botones */
+button.edit-btn {
+    background-color: #007bff;
+    color: white; /* Fondo transparente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor a mano al pasar sobre el botón */
+    padding: 10px; /* Espaciado interno */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animación suave */
+    font-size: 20px; /* Tamaño del ícono */
+}
+button.delete-btn{
+    background-color: #f63131; /* Fondo transparente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor a mano al pasar sobre el botón */
+    padding: 10px; /* Espaciado interno */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animación suave */
+    font-size: 20px; /* Tamaño del ícono */
+}
+
+/* Efecto al pasar el mouse sobre los botones */
+button.edit-btn:hover {
+    background-color: #0060c6; /* Fondo gris suave al pasar el mouse */
+
+}
+.button.delete-btn:hover{
+background-color: #b92626;
+}
+/* Estilo de los íconos dentro de los botones */
+button.edit-btn i, button.delete-btn i {
+    color: white; /* Color del ícono de editar */
+    font-size: 20px; /* Tamaño del ícono *//* Animación suave al cambiar color */
+}
+
+/* Estilo adicional para el botón de eliminar */
+button.delete-btn i {
+    color: #ffffff; /* Color rojo para el ícono de eliminar */
+}
+
+
+
+/* Estilo para el formulario de eliminar */
+form {
+    display: inline; /* Mantiene el formulario en línea */
+}

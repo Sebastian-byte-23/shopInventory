@@ -1,0 +1,91 @@
+/* Estilos personalizados para el Panel de Vendedor */
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente */
+    background-color: #f4f4f4; /* Color de fondo */
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin relleno */
+}
+
+h2 {
+    color: #000000; /* Color del título */
+    text-align: center; /* Centrar el título */
+    margin-top: 10px; /* Margen superior */
+}
+
+
+/* Estilos para el menú */
+.menu {
+    background-color: #007bff; /* Azul */
+    padding: 15px; /* Espaciado interno */
+    color: white; /* Texto blanco */
+}
+
+/* Opciones de menú */
+.menu-opciones {
+    padding: 20px; /* Espaciado interno */
+    max-width: 1000px; /* Ancho máximo */
+    margin: 60px auto; /* Centrar en la página */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-height: 400px; /* Altura máxima del contenedor */
+    overflow-y: auto; /* Agregar barra de desplazamiento vertical si el contenido es mayor que la altura máxima */
+}
+
+
+/* Estilos para la tabla */
+.productos-table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin-top: 20px; /* Margen superior */
+}
+
+.productos-table th, .productos-table td {
+    border: 1px solid #ccc; /* Borde gris claro */
+    padding: 10px; /* Espaciado interno */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+.productos-table th {
+    background-color: #007bff; /* Azul para el encabezado */
+    color: white; /* Texto blanco */
+}
+
+.productos-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo alternativo para filas */
+}
+
+.productos-table tr:hover {
+    background-color: #e9ecef; /* Color al pasar el cursor sobre las filas */
+}
+
+/* Botón de volver */
+.back-button {
+    display: block; /* Mostrar como bloque */
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    background-color: #007bff; /* Azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor a mano */
+    margin-top: 20px; /* Margen superior */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.back-button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el cursor */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-opciones {
+        padding: 10px; /* Reducir espaciado interno en pantallas pequeñas */
+    }
+    
+    .productos-table th, .productos-table td {
+        padding: 8px; /* Reducir espaciado interno de celdas en pantallas pequeñas */
+    }
+}

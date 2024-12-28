@@ -1,0 +1,314 @@
+/* Estilos personalizados para el Sistema de Gestión de Proveedores */
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    /* Color de fondo */
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+
+    text-align: center;
+    font-size: 25px;
+    /* Color de los títulos */
+}
+
+
+
+/* Contenedor principal */
+.container {
+    background-color: #ffffff;
+    /* Fondo blanco para el contenedor */
+    padding: 20px;
+    /* Espaciado interno */
+    margin: 20px auto;
+    /* Margen automático para centrar */
+    max-width: 50%;
+    /* Ancho máximo */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+/* Estilos del formulario */
+form {
+    margin-bottom: 20px;
+    /* Espacio debajo del formulario */
+}
+
+label {
+    display: block;
+    /* Etiquetas en nuevas líneas */
+    margin-bottom: 5px;
+    /* Espacio debajo de las etiquetas */
+    color: #555;
+    /* Color de las etiquetas */
+}
+
+input[type="text"] {
+    width: 90%;
+    /* Ancho completo */
+    padding: 10px;
+    /* Espaciado interno */
+    margin-bottom: 10px;
+    /* Espacio debajo del campo */
+    border: 1px solid #ccc;
+    /* Borde gris claro */
+    border-radius: 4px;
+    /* Bordes redondeados */
+}
+
+/* Estilos para botones */
+button {
+    background-color: #28a745;
+    /* Color verde para botones */
+    color: white;
+    /* Color del texto del botón */
+    padding: 10px 15px;
+    /* Espaciado interno del botón */
+    border: none;
+    /* Sin borde */
+    border-radius: 4px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor al pasar el ratón */
+}
+
+button:hover {
+    background-color: #218838;
+    /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    /* Ancho completo para la tabla */
+    border-collapse: collapse;
+    /* Colapsar bordes */
+    margin-top: 20px;
+    /* Espacio arriba de la tabla */
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    /* Borde gris claro */
+    padding: 10px;
+    /* Espaciado interno en celdas */
+    text-align: left;
+    /* Alineación del texto */
+}
+
+th {
+    background-color: #007bff;
+    /* Color de fondo de los encabezados */
+    color: #333;
+    /* Color del texto de los encabezados */
+    color: hwb(0 100% 0%);
+}
+
+
+tr:nth-child(even) {
+    background-color: #e9ecef;
+    /* Color de fondo alternativo para filas */
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    /* Oculto por defecto */
+    position: fixed;
+    /* Posición fija */
+    z-index: 1000;
+    /* Asegura que esté por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Ancho completo */
+    height: 100%;
+    /* Altura completa */
+    overflow: auto;
+    /* Habilitar desplazamiento si es necesario */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semi-transparente */
+}
+
+.modal-content {
+    background-color: #ffffff;
+    /* Fondo blanco para el modal */
+    margin: 15% auto;
+    /* Margen superior e inferior */
+    padding: 20px;
+    /* Espaciado interno */
+    border: 1px solid #888;
+    /* Borde gris */
+    width: 70%;
+    /* Ancho del modal */
+    max-width: 300px;
+    /* Ancho máximo del modal */
+    border-radius: 8px;
+    /* Bordes redondeados */
+}
+
+.close {
+    color: #aaa;
+    /* Color del botón de cerrar */
+    float: right;
+    /* Alinear a la derecha */
+    font-size: 28px;
+    /* Tamaño del texto */
+    font-weight: bold;
+    /* Negrita */
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    /* Color al pasar el ratón */
+    text-decoration: none;
+    /* Sin subrayado */
+    cursor: pointer;
+    /* Cambia el cursor al pasar el ratón */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #343a40;
+    /* Color de fondo del pie de página */
+    color: white;
+    /* Color del texto del pie de página */
+    padding: 20px;
+    /* Espaciado interno */
+    text-align: center;
+    /* Centrado del texto */
+    position: relative;
+    /* Posicionamiento relativo */
+    bottom: 0;
+    /* Al fondo */
+    width: 100%;
+    /* Ancho completo */
+}
+
+footer p {
+    margin: 5px 0;
+    /* Espaciado en el pie de página */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        /* Elementos en bloque para móviles */
+        margin-bottom: 10px;
+        /* Espacio debajo de cada elemento */
+    }
+
+    .container {
+        width: 90%;
+        /* Ancho reducido en móviles */
+    }
+
+    .modal-content {
+        width: 90%;
+        /* Ancho del modal en pantallas pequeñas */
+    }
+}
+
+.open-modal {
+    background-color: #007bff;
+}
+
+.open-modal:hover {
+    background-color: #0056b3;
+}
+
+button.eliminar {
+    background-color: #dc3545;
+}
+
+button.eliminar:hover {
+    background-color: #c82333;
+}
+
+/* Botón con icono azul (Editar) */
+.btn-edit {
+    background-color: #007bff; /* Fondo azul para el botón de editar */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%; /* Hacer el botón redondo */
+    padding: 10px; /* Ajusta el tamaño del botón */
+    font-size: 20px; /* Tamaño adecuado para el icono */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto al pasar el ratón sobre el botón de editar */
+.btn-edit:hover {
+    background-color: #0056b3;  /* Fondo azul más oscuro al pasar el ratón */
+}
+
+/* Estilos para el icono dentro del botón */
+.btn-edit i {
+    color: white; /* Icono blanco */
+    font-size: 20px; /* Ajusta el tamaño del icono */
+}
+
+/* Botón con icono rojo (Eliminar) */
+.eliminar-btn {
+    background-color: #dc3545; /* Fondo rojo para el botón de eliminar */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%; /* Hacer el botón redondo */
+    padding: 10px; /* Ajusta el tamaño del botón */
+    font-size: 20px; /* Tamaño adecuado para el icono */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto al pasar el ratón sobre el botón de eliminar */
+.eliminar-btn:hover {
+    background-color: #c82333;  /* Fondo rojo más oscuro al pasar el ratón */
+}
+
+/* Estilos para los iconos dentro de los botones */
+button i, form button i {
+    font-size: 20px;
+    color: white;  /* Los iconos serán blancos */
+    transition: color 0.3s ease;
+}
+
+/* Tooltip (mensaje emergente) cuando se pasa el ratón sobre los iconos */
+button[title]:hover::after, form button[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: -25px;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+/* Botón con icono cian (Botón general) */
+.button-i {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el ratón sobre el botón cian */
+.button-i:hover {
+    background-color: #127f90;
+}
+

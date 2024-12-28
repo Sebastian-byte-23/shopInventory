@@ -1,0 +1,186 @@
+/* Estilos generales para los campos */
+.filter-input,
+.filter-select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* Contenedor de los filtros */
+.filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: flex-start;
+}
+
+/* Contenedor individual para cada campo de filtro */
+.filters-container .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-basis: 220px; /* Ancho de cada grupo de etiqueta + input/select */
+}
+
+/* Etiquetas de búsqueda avanzada */
+.filters-container label.busqueda {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+/* Estilos de los inputs y selects dentro de los filtros */
+.filters-container input[type="text"],
+.filters-container select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Ajuste del ancho para inputs y selects en pantallas pequeñas */
+@media (max-width: 768px) {
+    .filters-container {
+        flex-direction: column;
+    }
+
+    .filters-container .filter-group {
+        flex-basis: 100%;
+    }
+}
+
+/* Estilo del formulario de filtros */
+#filterForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 100%;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+/* Estilos para los campos de entrada en el formulario de búsqueda avanzada */
+#filterForm input[type="text"],
+#filterForm select {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 8px 12px;
+    color: #333;
+    width: 100%;
+    max-width: 200px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Estilo para los inputs de texto */
+#filterForm input[type="text"]::placeholder {
+    color: #333;
+    font-size: 16px;
+}
+
+/* Estilo para los selects */
+#filterForm select {
+    appearance: none;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    width: 100%;
+    max-width: 250px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Personalización del ícono del select */
+#filterForm select {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 14px;
+}
+
+/* Focus y hover para input y select */
+#filterForm input[type="text"]:focus,
+#filterForm select:focus,
+#filterForm input[type="text"]:hover,
+#filterForm select:hover {
+    border-color: #888;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+/* Estilo del botón de búsqueda avanzada */
+#advancedSearchForm button {
+    max-width: 100px;
+    background-color: #28a745;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Botón de búsqueda avanzada */
+#advancedSearchForm button:hover {
+    background-color: #218838;
+}
+
+/* Alineación del contenedor de botones */
+.action-buttons-container {
+    text-align: start;
+    margin-bottom: -50px;
+}
+
+/* Botones en acción */
+.add-button,
+#viewChangesBtn,
+.button-ver,
+.button-categorias,
+#toggleFiltersBtn {
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+/* Hover de botones */
+.add-button:hover,
+#viewChangesBtn:hover,
+.button-ver:hover,
+.button-categorias:hover,
+#toggleFiltersBtn:hover {
+    opacity: 0.8;
+}
+
+/* Estilo para el botón de mostrar/ocultar filtros */
+#toggleFiltersBtn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+#toggleFiltersBtn:hover {
+    background-color: #0056b3;
+}
+

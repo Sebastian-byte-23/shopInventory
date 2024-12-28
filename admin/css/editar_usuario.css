@@ -1,0 +1,90 @@
+
+
+/* Estilos para el contenido del modal */
+.modal-content-user {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 20%;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Estilo del botón de cierre */
+.close {
+    top: 10px;
+    right: 150px;
+    font-size: 30px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Estilos para los campos del formulario */
+form {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilos para las etiquetas de los campos */
+label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* Estilos para los inputs y select */
+input[type="text"],
+input[type="password"],
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Estilo del botón de envío */
+input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilo del contenedor de mensajes de respuesta */
+.response-message {
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Estilos para mensajes de error */
+.response-message.error {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Estilos para mensajes de éxito */
+.response-message.success {
+    background-color: #4CAF50;
+    color: white;
+}

@@ -1,0 +1,350 @@
+/* Estilos del modal */
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    /* Cambia el 10% a 5% para posicionar más arriba */
+    padding: 20px;
+    border-radius: 8px;
+    width: 20%;
+    max-height: 80%;
+    /* Limita la altura máxima del modal */
+    overflow-y: auto;
+    /* Agrega barra de desplazamiento vertical si es necesario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilo para los campos de entrada */
+.input-field {
+    width: auto;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Estilo para el campo de selección */
+.select-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.select-field:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Estilo para el botón de agregar */
+.add-employee-button {
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Color del texto blanco */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.add-employee-button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilo para el botón de cierre */
+.close-add-employee {
+    color: #aaa; /* Color gris para la "X" */
+    float: right; /* Alinear a la derecha */
+    font-size: 28px; /* Tamaño de la "X" */
+    font-weight: bold; /* Negrita */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    margin-bottom: 10px; /* Espacio inferior para separación */
+}
+
+/* Efecto cuando el ratón pasa sobre el botón de cierre */
+.close-add-employee:hover,
+.close-add-employee:focus {
+    color: #f44336; /* Color rojo al pasar el ratón */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Efecto de enfoque para accesibilidad */
+.close-add-employee:focus {
+    outline: none; /* Quitar el borde por defecto del foco */
+}
+
+/* Estilo para los botones en pantallas pequeñas */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* Aumentar el tamaño en pantallas pequeñas */
+    }
+
+    .modal-header h2 {
+        font-size: 20px;
+    }
+
+    .input-field,
+    .select-field {
+        font-size: 14px; /* Ajustar el tamaño de los inputs */
+    }
+
+    .add-employee-button {
+        font-size: 18px;
+    }
+}
+
+.close-edit {
+    color: #aaa; /* Color gris para la "X" */
+    float: right; /* Alinear a la derecha */
+    font-size: 28px; /* Tamaño de la "X" */
+    font-weight: bold; /* Negrita */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    margin-bottom: 10px; /* Espacio inferior para separación */
+}
+
+.close-edit:hover,
+.close-edit:focus {
+    color: black; /* Color más oscuro al pasar el mouse */
+    text-decoration: none; /* Sin subrayado */
+}
+.close-change {
+    color: #aaa; /* Color gris para la "X" */
+    float: right; /* Alinear a la derecha */
+    font-size: 28px; /* Tamaño de la "X" */
+    font-weight: bold; /* Negrita */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    margin-bottom: 10px; /* Espacio inferior para separación */
+}
+
+.close-change:hover,
+.close-change:focus {
+    color: black; /* Color más oscuro al pasar el mouse */
+    text-decoration: none; /* Sin subrayado */
+}
+/* Estilo para el botón de cerrar */
+.close-add-user {
+    color: #aaa; /* Color gris claro */
+    float: right; /* Alinear a la derecha */
+    font-size: 28px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+}
+
+.close-add-user:hover,
+.close-add-user:focus {
+    color: black; /* Cambia a negro al pasar el ratón o al enfocarse */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cambia el cursor a puntero */
+}
+/* Estilos para el modal de cambio de clave */
+#changePassModal {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    display: flex; /* Habilita el uso de flexbox */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+#changePassFormContainer {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 100px;
+    background: white; /* Fondo blanco para el contenedor del formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    max-width: 300px; /* Ancho máximo del contenedor */
+    width: 80%; /* Ocupar el 90% del ancho hasta el máximo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+#changePassForm h2 {
+    margin: 0 0 15px; /* Espacio inferior del título */
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10px; /* Tamaño de fuente del título */
+}
+
+#changePassForm label {
+    margin-bottom: 5px; /* Espacio inferior entre la etiqueta y el input */
+}
+
+#changePassForm input {
+    width: 105%; /* El input ocupa todo el ancho del contenedor */
+    padding: 10px; /* Espaciado interno en el input */
+    margin-bottom: 15px; /* Espacio inferior entre el input y el botón */
+    border: 1px solid #ccc; /* Borde del input */
+    border-radius: 4px; /* Bordes redondeados del input */
+}
+
+#changePassForm button[type="submit"],
+button[type="button"] {
+    background-color: #28a745; /* Color verde para el botón de cambiar clave */
+    color: white; /* Color del texto */
+    border: none;
+    font-size: 13px; /* Sin borde */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    width: 105%; /* Botón ocupa todo el ancho */
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+    display: flexbox; /* Margen superior para separación */
+}
+
+#changePassForm button[type="submit"]:hover,
+button[type="button"]:hover {
+    background-color: #218838; /* Color más oscuro al pasar el mouse */
+}
+.btn-volver {
+    background-color: #007bff; /* Color azul para el botón de volver */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    width: 50%; /* Botón ocupa todo el ancho */
+    margin-top: 10px; /* Margen superior para separación */
+    transition: background-color 0.3s ease;
+    text-align: center;
+    justify-content: center;
+    margin-left: 70px; /* Transición suave para el hover */
+}
+
+.btn-volver:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+.buttons-registrar{
+    background-color: #28a745;
+    /* Color de fondo verde */
+    color: white;
+    /* Color del texto blanco */
+    padding: 10px 15px;
+    /* Espaciado interno */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s ease;
+    /* Transición suave */
+}
+
+/* Estilos del Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+input[type="text"],
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Botón de Guardar Cambios */
+button[type="submit"] {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Verde más oscuro */
+}
+
+/* Estilo para el título del modal */
+h2 {
+    text-align: center; /* Centra el texto */
+    color: #333; /* Color del texto */
+}
+
+/* Estilo para las etiquetas */
+label {
+    display: block; /* Asegura que las etiquetas ocupen el ancho completo */
+    margin: 10px 0 5px; /* Margen para las etiquetas */
+    color: #555; /* Color del texto */
+}
+
+/* Estilo para los campos de entrada y select */
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin: 5px 0 20px; /* Margen para separación */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+/* Estilo para el botón de agregar usuario */
+button[type="submit"] {
+    width: 100%; /* Ancho completo */
+    background-color: #50bb55; /* Verde */ /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 10px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a puntero */
+    font-size: 16px; /* Tamaño del texto */
+}
+button[type="submit"]:hover {
+    background-color: #45a049; /* Color más oscuro al pasar el ratón */
+}
+
+
+
+
+/* Botón de cierre */
+.close-add-user {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-add-user:hover, .close-add-user:focus, .close-add-employee:hover, .close-add-employee:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

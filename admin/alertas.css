@@ -1,0 +1,110 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.container {
+    width: 50%;
+    max-height: 500px;
+    /* Ajusta la altura máxima según lo que necesites */
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-y: auto;
+    /* Agrega la barra de desplazamiento vertical */
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    width: 900px;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+td {
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.control-button {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.control-button:hover {
+    background-color: #218838;
+}
+
+/* Estilos para el botón "Volver al Inventario" */
+.button-i {
+    background-color: #17a2b8;  /* Color de fondo verde */
+    color: white;               /* Color del texto */
+    font-size: 15px;            /* Tamaño de fuente */
+    padding: 10px 20px;         /* Relleno interno (alto y ancho) */
+    border: none;               /* Sin borde */
+    border-radius: 5px;         /* Bordes redondeados */
+    cursor: pointer;            /* Cambiar el cursor al pasar por encima */
+    transition: all 0.3s ease;  /* Efecto suave para cambios de estilo */
+}
+
+/* Efecto al pasar el ratón sobre el botón */
+.button-i:hover {
+    background-color: #127585;  /* Color de fondo más oscuro */
+}
+
+/* Efecto al hacer clic en el botón */
+.button-i:active {
+    background-color: #3e8e41;  /* Aún más oscuro cuando se hace clic */
+}
+
+

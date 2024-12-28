@@ -1,0 +1,222 @@
+/* Estilos personalizados para el Panel de Vendedor */
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    /* Color de fondo */
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #000000;
+    /* Color del título */
+    text-align: center;
+    /* Centrar título */
+    margin-top: 10px;
+    /* Margen superior */
+}
+
+
+/* Estilos para el menú */
+.menu {
+    background-color: #007bff;
+    /* Azul */
+    padding: 15px;
+    /* Espaciado interno */
+    color: white;
+    /* Texto blanco */
+}
+
+/* Opciones de menú */
+.menu-opciones {
+    padding: 20px;
+    /* Espaciado interno */
+    max-width: 1000px;
+    /* Ancho máximo */
+    margin: 60px auto;
+    /* Centrar en la página */
+    background-color: #ffffff;
+    /* Fondo blanco */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+/* Estilos para la tabla */
+.ventas-table {
+    width: 100%;
+    /* Ancho completo */
+    border-collapse: collapse;
+    /* Colapsar bordes */
+    margin-top: 20px;
+    /* Margen superior */
+}
+
+.ventas-table th,
+.ventas-table td {
+    border: 1px solid #ccc;
+    /* Borde gris claro */
+    padding: 10px;
+    /* Espaciado interno */
+    text-align: left;
+    /* Alinear texto a la izquierda */
+}
+
+.ventas-table th {
+    background-color: #007bff;
+    /* Azul para el encabezado */
+    color: white;
+    /* Texto blanco */
+}
+
+.ventas-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+    /* Color de fondo alternativo para filas */
+}
+
+.ventas-table tr:hover {
+    background-color: #e9ecef;
+    /* Color al pasar el cursor sobre las filas */
+}
+
+/* Botón de volver */
+.back-button {
+    display: block;
+    /* Mostrar como bloque */
+    width: 100%;
+    /* Ancho completo */
+    padding: 10px;
+    /* Espaciado interno */
+    background-color: #007bff;
+    /* Azul */
+    color: white;
+    /* Texto blanco */
+    border: none;
+    /* Sin borde */
+    border-radius: 4px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambiar cursor a mano */
+    margin-top: 20px;
+    /* Margen superior */
+    transition: background-color 0.3s ease;
+    /* Transición suave */
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    /* Color más oscuro al pasar el cursor */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-opciones {
+        padding: 10px;
+        /* Reducir espaciado interno en pantallas pequeñas */
+    }
+
+    .ventas-table th,
+    .ventas-table td {
+        padding: 8px;
+        /* Reducir espaciado interno de celdas en pantallas pequeñas */
+    }
+}
+
+/* Contenedor de los botones de exportación alineados a la derecha */
+.export-buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    /* Alinea los botones a la derecha */
+    gap: 10px;
+    /* Espacio entre los botones */
+    width: 100%;
+    /* Asegura que el contenedor ocupe todo el espacio disponible */
+}
+
+/* Estilos generales para los botones de exportación */
+.export-btn {
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    /* Ancho del botón */
+    height: 50px;
+    /* Alto del botón */
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 0;
+}
+
+/* Estilo del botón de Excel */
+.export-btn.excel {
+    background-color: #28a745;
+    /* Verde contrastante */
+}
+
+.export-btn.excel i {
+    color: white;
+    /* Color blanco para el icono */
+    font-size: 30px;
+    /* Tamaño del icono */
+}
+
+/* Estilo del botón de CSV */
+.export-btn.csv {
+    background-color: #007BFF;
+    /* Azul para el CSV */
+}
+
+.export-btn.csv i {
+    color: white;
+    /* Color blanco para el icono */
+    font-size: 30px;
+    /* Tamaño del icono */
+}
+
+/* Efecto de hover para los botones */
+.export-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el icono dentro del botón */
+.export-btn i {
+    font-size: 24px;
+}
+
+/* Estilos para el botón de resetear ventas */
+.reset-btn {
+    background-color: #f44336;
+    /* Rojo para indicar acción de eliminar */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+
+}
+
+.reset-btn:hover {
+    background-color: #d32f2f;
+    /* Color más oscuro al pasar el ratón */
+}
+
+
+.form-container {
+    display: flex; /* Los formularios se alinearán en una fila */
+    gap: 670px; 
+}
+
+form {
+    width: 45%; /* Ancho de cada formulario, puedes ajustarlo */
+}

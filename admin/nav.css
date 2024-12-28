@@ -1,0 +1,95 @@
+/* Clase para el cuerpo con barra de desplazamiento */
+.body-with-scrollbar {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto; /* Barra de desplazamiento vertical */
+    max-height: 100vh; /* Limita el cuerpo a la altura de la ventana */
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #007bff;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: end; /* Mueve el contenido al final */
+}
+
+nav ul li {
+    display: flex;
+    margin-right: 20px; /* Ajustado para reducir espacio */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+/* Estilo para el enlace activo */
+nav ul li a.active {
+    background-color: #ffffff; /* Azul oscuro */
+    color: #007bff; /* Letras blancas */
+    border-radius: 5px;
+}
+
+/* Estilo para el texto de marca */
+.nav-links {
+    text-align: start;
+    margin-right: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links .brand {
+    margin-right: auto; /* Empuja el resto de los elementos a la derecha */
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+/* Estilo para el enlace de cerrar sesión */
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    /* Alinea todos los elementos de la navegación al final */
+}
+
+nav ul li {
+    display: flex;
+    margin-right: 10px;
+    text-align: end;
+}
+
+nav ul li.logout a {
+    background-color: red;
+    padding: 8px 16px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li.logout a:hover {
+    background-color: darkred;
+}

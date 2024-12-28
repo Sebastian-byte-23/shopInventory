@@ -1,0 +1,138 @@
+/* Estilos para el body de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Esto oculta cualquier desplazamiento horizontal */
+}
+
+/* Estilos para la interfaz */
+.container {
+    max-width: 85%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-height: 600px;
+    /* Puedes ajustar esta altura según sea necesario */
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* Esto oculta cualquier desplazamiento horizontal */
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/* Estilo del botón */
+#button-cadu {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#button-cadu:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Estilo para las alertas */
+#alertas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 15px;
+    /* Espacio entre las tarjetas */
+}
+
+.alert {
+    background-color: #f9f9f9;
+    border-left: 5px solid;
+    padding: 12px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    /* Asegura que padding no exceda el tamaño */
+}
+
+/* Estilo para alerta de productos caducados */
+.alert.caducado {
+    border-color: #f44336;
+    background-color: #fce4e4;
+    color: #f44336;
+}
+
+/* Estilo para alerta de productos próximos a caducar */
+.alert.proximo {
+    border-color: #ff9800;
+    background-color: #fff3e0;
+    color: #ff9800;
+}
+
+/* Iconos grandes para las alertas */
+.alert i {
+    font-size: 25px;
+}
+
+.alert.caducado i {
+    color: #f44336;
+}
+
+.alert.proximo i {
+    color: #ff9800;
+}
+
+/* Barra de progreso */
+.progress-bar {
+    width: 100%;
+    /* Asegura que la barra no exceda el ancho de la tarjeta */
+    height: 8px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    margin-top: 8px;
+    overflow: hidden;
+    /* Evita desbordamiento del contenido interno */
+    box-sizing: border-box;
+    /* Considera padding y bordes dentro del tamaño */
+}
+
+/* Progreso interno */
+.progress-bar span {
+    display: block;
+    height: 100%;
+    width: 0%;
+    /* Ancho inicial */
+    transition: width 0.3s ease;
+    /* Animación suave */
+}
+
+/* Barra de progreso con diferentes colores según el estado */
+.progress-bar.danger span {
+    background-color: #f44336;
+}
+
+.progress-bar.warning span {
+    background-color: #ff9800;
+}
+
+.progress-bar.success span {
+    background-color: #4caf50;
+}

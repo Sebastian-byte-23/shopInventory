@@ -1,0 +1,73 @@
+
+/* Estilo base del snackbar */
+#snackbar {
+    visibility: hidden;
+    min-width: 300px;
+    margin-left: auto;
+    background-color: #e42828;
+    color: #fff;
+    text-align: left;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 20px; /* Posiciona el snackbar a la izquierda */
+    bottom: 30px;
+    font-size: 17px;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out, visibility 0s 0.6s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transform: translateY(20px); /* Comienza desplazado hacia abajo */
+}
+
+/* Mostrar el snackbar con transición */
+#snackbar.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0); /* El snackbar se mueve hacia su posición original */
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+/* Animación de entrada y salida */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    25% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    75% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* Animación adicional de sacudida */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Aplicar animaciones al snackbar cuando aparezca */
+#snackbar.show {
+    animation: fadeInOut 3s ease-in-out, shake 0.5s ease-out;
+}
