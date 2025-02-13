@@ -1,0 +1,9 @@
+Admin
+
+usuario: Admin
+clave:Admin
+
+vendedor:
+
+usuario: Vendedor
+clave: vendedor
